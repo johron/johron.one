@@ -1,0 +1,38 @@
+body {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    background-color: #1a1c20;
+}
+
+body #greet {
+    top: 5%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 5%);
+}
+
+.middle {
+    width: 30%;
+    height: 60%;
+    background-color: #14171c;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -40%);
+    border-radius: 10px;
+}
+
+.middle .nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+.middle .content h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: overline;
+    color: #346DDB;
+}
