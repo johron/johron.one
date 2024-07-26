@@ -2,23 +2,17 @@ body {
     font-family: 'Inter', sans-serif;
     color: #fff;
     background-color: #1a1c20;
-}
-
-body #greet {
-    top: 5%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, 5%);
+    text-align: center;
+    padding-top: 20px;
 }
 
 .middle {
-    width: 30%;
-    height: 60%;
+    width: 600px;
+    height: auto;
     background-color: #14171c;
-    top: 40%;
     left: 50%;
     position: absolute;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%);
     border-radius: 10px;
 }
 
@@ -28,7 +22,13 @@ body #greet {
     padding: 1%;
 }
 
-.middle .content {
+.middle .text {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.middle .experience {
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
