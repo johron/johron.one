@@ -28,7 +28,9 @@ body #greet {
     padding: 1%;
 }
 
-.middle .content h2 {
+.middle .content {
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
 }
 
