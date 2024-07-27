@@ -1,5 +1,4 @@
-//let greetings = ["Hello", "Hola", "Bonjour", "Hallo", "Ciao", "Olá", "Привет", "こんにちは", "你好", "안녕하세요", "مرحبا", "नमस्ते", "Hej", "Hallo", "Γειά σου", "Ahoj", "Szia", "Selam", "שלום"];
-let greetings = ["Hello", "Hola", "Hallo"]
+let greetings = ["Hello", "Hola", "Bonjour", "Hallo", "Ciao", "Olá", "Привет", "مرحبا", "नमस्ते", "Hej", "Γειά σου", "Ahoj", "Szia", "Selam", "שלום"];
 let currentTick = 0;
 let fadeDuration = 500; // duration of the fade animation in milliseconds
 
