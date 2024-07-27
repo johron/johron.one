@@ -4,10 +4,12 @@ body {
     background-color: #1a1c20;
     text-align: center;
     padding-bottom: 20px;
+    margin: 0;
 }
 
 middle {
-    width: 600px;
+    width: 90%;
+    max-width: 600px;
     height: auto;
     padding-bottom: 20px;
     background-color: #14171c;
@@ -16,6 +18,7 @@ middle {
     position: absolute;
     transform: translate(-50%, -50%);
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 #text {
@@ -24,8 +27,8 @@ middle {
 }
 
 middle .experience {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     justify-content: center;
     background-color: #101216;
@@ -60,8 +63,8 @@ img:hover {
 
 .links {
     justify-content: center;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     background-color: #101216;
     border-radius: 7px;
@@ -70,7 +73,7 @@ img:hover {
     flex-wrap: wrap;
 }
 
-.links a{
+.links a {
     text-decoration: none;
 }
 
@@ -78,4 +81,39 @@ img:hover {
     width: 40px;
     height: 40px;
     padding-inline: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    middle {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .experience a img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .links a img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    middle {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .experience a img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .links a img {
+        width: 25px;
+        height: 25px;
+    }
 }
