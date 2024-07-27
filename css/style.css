@@ -3,32 +3,27 @@ body {
     color: #fff;
     background-color: #1a1c20;
     text-align: center;
-    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.middle {
+middle {
     width: 600px;
     height: auto;
     padding-bottom: 20px;
     background-color: #14171c;
     left: 50%;
+    top: 50%;
     position: absolute;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
     border-radius: 10px;
 }
 
-.middle .nav {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1%;
-}
-
-.middle .text {
+#text {
     margin-left: 5%;
     margin-right: 5%;
 }
 
-.middle .experience {
+middle .experience {
     margin-left: 20%;
     margin-right: 20%;
     display: flex;
@@ -50,12 +45,37 @@ body {
     padding-inline: 4px;
 }
 
-.nav a {
-    text-decoration: none;
-    color: #346DDB;
-    transition: color 0.3s ease;
+img#bottom {
+    height: 35px;
+    width: 35px;
+    bottom: 20px;
+    left: 20px;
+    position: fixed;
 }
 
-.nav a:hover {
-    color: #254d9c;
+img:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+    transition: filter 0.3s ease;
+}
+
+.links {
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    display: flex;
+    background-color: #101216;
+    border-radius: 7px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    flex-wrap: wrap;
+}
+
+.links a{
+    text-decoration: none;
+}
+
+.links a img {
+    width: 40px;
+    height: 40px;
+    padding-inline: 10px;
 }
