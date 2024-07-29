@@ -1,5 +1,6 @@
 let greetings = ["Hello", "Hola", "Bonjour", "Hallo", "Ciao", "Olá", "Привет", "مرحبا", "नमस्ते", "Hej", "Γειά σου", "Ahoj", "Szia", "Selam", "שלום"];
 let currentTick = 0;
+let is_first_tick = true;
 let fadeDuration = 500; // duration of the fade animation in milliseconds
 
 function fadeIn(element) {
@@ -36,11 +37,12 @@ function fadeOut(element) {
 
 setInterval(function() {
     let greet_element = document.getElementById("greet");
-    if (currentTick == 0) { currentTick++; }
+    if (is_first_tick) currentTick += 1;
     fadeOut(greet_element);
     setTimeout(function() {
         greet_element.innerHTML = greetings[currentTick];
         fadeIn(greet_element);
         currentTick = (currentTick + 1) % greetings.length;
+        is_first_tick = false;
     }, fadeDuration);
 }, 2500);
