@@ -47,6 +47,25 @@ middle .experience {
     padding-inline: 4px;
 }
 
+middle .languages {
+    margin-left: 38%;
+    display: flex;
+    margin-right: 38%;
+    justify-content: center;
+    background-color: #101216;
+    border-radius: 7px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    flex-wrap: wrap;
+}
+
+.languages img {
+    width: 28px;
+    height: 28px;
+    padding-inline: 4px;
+}
+
+
 img#bottom {
     height: 32px;
     width: 32px;
