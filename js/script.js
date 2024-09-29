@@ -1,4 +1,4 @@
-let greetings = ["Hello", "Hola", "Hallo", "Hei"];
+let greetings = ["Hello", "Hola", "Hallo"];
 let currentTick = 0;
 let is_first_tick = true;
 let fadeDuration = 500; // duration of the fade animation in milliseconds
