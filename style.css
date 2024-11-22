@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: linear-gradient(90deg, #1D2D63, #151214);
+    background: linear-gradient(90deg, #04091B, #1D2D63);
     display: flex;
     flex-direction: column;
     justify-content: center;
