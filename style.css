@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-    margin-bottom: 10px; /* Adjust the spacing between h1 and div */
+    margin-bottom: 0px;
 }
 
 p {
@@ -36,7 +36,7 @@ div {
 img {
     width: 25px;
     height: 25px;
-    margin-right: 10px; /* Adjust the spacing between img and p */
+    margin-right: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
