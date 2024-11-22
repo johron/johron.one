@@ -6,16 +6,49 @@
 
 body {
     background: linear-gradient(90deg, #1D2D63, #151214);
-    display: block;
-    align-content: center;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
     font-size: xxx-large;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Nimbus Sans', sans-serif;
 }
 
+h1 {
+    margin-bottom: 10px; /* Adjust the spacing between h1 and div */
+}
+
+p {
+    font-size: medium;
+    color: #D3D3D3;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 img {
     width: 25px;
     height: 25px;
+    margin-right: 10px; /* Adjust the spacing between img and p */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+img:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+    transition: filter 0.3s ease;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
 }
