@@ -4,6 +4,10 @@
          url("fonts/NimbusSanL-Bol.otf");
 }
 
+html {
+    background-color: #151214;
+}
+
 body {
     background: linear-gradient(90deg, #1D2D63, #151214);
     display: flex;
@@ -51,4 +55,34 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: xx-large;
+    }
+
+    img {
+        width: 22px;
+        height: 22px;
+    }
+
+    p {
+        font-size: large;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: x-large;
+    }
+
+    img {
+        width: 18px;
+        height: 18px;
+    }
+
+    p {
+        font-size: medium;
+    }
 }
