@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('mousemove', function(e) {
-    const body = document.getElementById('gradient');
+    const body = document.getElementById('top');
     const x = (e.clientX / window.innerWidth) * 100;
     body.style.background = `linear-gradient(${x}deg, #04091B, #1D2D63)`;
 });
