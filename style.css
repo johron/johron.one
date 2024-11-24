@@ -6,6 +6,8 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: hidden;
 }
 
 body {
@@ -17,14 +19,54 @@ body {
     padding: 0;
 }
 
-div#top {
+.blue {
     background: linear-gradient(90deg, #04091B, #1D2D63);
+}
+
+.about {
+    max-width: 60vh;
+    text-align: center;
+}
+
+.gigatext {    
+    font-size: 16vh;
+}
+
+.titlebar {
+    margin-top: 2vh;
+}
+
+.no-margin {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.offwhite {
+    color: #cbcbcb;
+}
+
+.center {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    font-size: xxx-large;
+}
+
+.list-down {
+    flex-direction: column;
+}
+
+.gap {
+    gap: 2vh;
+}
+
+.list-side {
+    display: flex;
+    gap: 2vh;
+}
+
+.space-between {
+    justify-content: space-between;
 }
 
 #down-arrow {
@@ -34,53 +76,26 @@ div#top {
     transform: translateX(-50%);
 }
 
-div#projects {
-    display: flex;
+.section {
+    scroll-snap-align: start;
     height: 100vh;
+    position: relative;
+}
+
+.box {
+    width: 20vh;
+    background-color: #272325;
+    padding: 0 1.5vh;
+    border-radius: 10px;
+    border: 1px solid #3C383C;
 }
 
 #list-down {
     margin: 5vh 5vh;
 }
 
-h1 {
-    margin-bottom: 0px;
-}
-
 p {
-    font-size: medium;
     color: #D3D3D3;
-}
-
-a {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    border-radius: 50vh;
-}
-
-a#link img {
-    background-color: #3C383C;
-    border-radius: 5vh;
-    padding: 0.5vh;
-}
-
-div#list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2vh;
-}
-
-div#list-uncenter {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1vw;
-}
-
-div#list-down {
-    display: block;
-    gap: 4vh;
 }
 
 img {
@@ -92,13 +107,6 @@ img {
 img:hover {
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
     transition: filter 0.3s ease;
-}
-
-div#box {
-    background-color: #272325;
-    padding: 0.5vh 2vh 0.5vh 2vh;
-    border-radius: 10px;
-    border: 1px solid #444;
 }
 
 @media (max-width: 768px) {
