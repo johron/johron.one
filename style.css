@@ -53,6 +53,10 @@ body {
     align-items: center;
 }
 
+.right {
+    right: 3vh;
+}
+
 .list-down {
     flex-direction: column;
 }
@@ -70,18 +74,18 @@ body {
     justify-content: space-between;
 }
 
-.down-arrow {
+.top {
     position: absolute;
-    bottom: 3vh;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 3vh;
 }
 
-.up-arrow {
+.bottom {
     position: absolute;
-    transform: translateX(-50%) rotate(180deg);
-    top: 3vh;
-    left: 50%;
+    bottom: 3vh;
+}
+
+.flip {
+    transform: rotate(180deg);
 }
 
 .section {
