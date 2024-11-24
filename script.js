@@ -27,18 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
         scrollToSection(currentSection);
     });
 
-    const downArrow = document.getElementById('down-arrow');
-    downArrow.addEventListener('click', function(event) {
-        event.preventDefault();
-        scrollToSection(1); // Assuming the projects section is the second section
-    });
-
-    const upArrow = document.getElementById('up-arrow');
-    upArrow.addEventListener('click', function(event) {
-        event.preventDefault();
-        scrollToSection(0); // Assuming the projects section is the second section
-    });
-
     function fadeIn(element) {
         element.style.opacity = 0;
         let start = null;
