@@ -8,6 +8,7 @@ html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     overflow-y: hidden;
+    text-align: center;
 }
 
 body {
@@ -88,6 +89,7 @@ body {
     padding: 0 1.5vh;
     border-radius: 10px;
     border: 1px solid #3C383C;
+    text-align: left;
 }
 
 #list-down {
@@ -109,9 +111,27 @@ img:hover {
     transition: filter 0.3s ease;
 }
 
+@media (max-width: 1024px) {
+    .gigatext {
+        font-size: 12vh;
+    }
+
+    .box {
+        width: 18vh;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         font-size: xx-large;
+    }
+
+    .gigatext {
+        font-size: 10vh;
+    }
+
+    .box {
+        width: 16vh;
     }
 
     img {
@@ -121,20 +141,5 @@ img:hover {
 
     p {
         font-size: large;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: x-large;
-    }
-
-    img {
-        width: 18px;
-        height: 18px;
-    }
-
-    p {
-        font-size: medium;
     }
 }
