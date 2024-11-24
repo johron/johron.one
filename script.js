@@ -30,7 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const downArrow = document.getElementById('down-arrow');
     downArrow.addEventListener('click', function(event) {
         event.preventDefault();
-        scrollToSection(currentSection + 1); // Assuming the projects section is the second section
+        scrollToSection(1); // Assuming the projects section is the second section
+    });
+
+    const upArrow = document.getElementById('up-arrow');
+    upArrow.addEventListener('click', function(event) {
+        event.preventDefault();
+        scrollToSection(0); // Assuming the projects section is the second section
     });
 
     function fadeIn(element) {
