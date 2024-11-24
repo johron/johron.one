@@ -77,6 +77,13 @@ body {
     transform: translateX(-50%);
 }
 
+#up-arrow {
+    position: absolute;
+    transform: translateX(-50%) rotate(180deg);
+    top: 3vh;
+    left: 50%;
+}
+
 .section {
     scroll-snap-align: start;
     height: 100vh;

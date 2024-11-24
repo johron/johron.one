@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
         sections[index].scrollIntoView({ behavior: 'smooth' });
     }
 
+    // Scroll to the first section on page load
+    scrollToSection(0);
+
     document.addEventListener('wheel', function(event) {
         if (event.deltaY > 0) {
             currentSection = Math.min(currentSection + 1, sections.length - 1);
@@ -64,22 +67,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     setInterval(function() {
-        let greetElement = document.querySelector(".greet");
-        if (greetElement) {
+        let greet_element = document.querySelector(".greet");
+        if (greet_element) { // Check if the element exists
             if (isFirstTick) currentTick += 1;
-            fadeOut(greetElement);
+            fadeOut(greet_element);
             setTimeout(function() {
-                greetElement.innerHTML = greetings[currentTick] + ",";
-                fadeIn(greetElement);
+                greet_element.innerHTML = greetings[currentTick];
+                fadeIn(greet_element);
                 currentTick = (currentTick + 1) % greetings.length;
                 isFirstTick = false;
             }, fadeDuration);
         }
-    }, 3500);
+    }, 2500);
 });
 
 document.addEventListener('mousemove', function(e) {
-    const body = document.querySelector('.blue');
+    const body = document.getElementById('top');
     const x = (e.clientX / window.innerWidth) * 100;
     body.style.background = `linear-gradient(${x}deg, #04091B, #1D2D63)`;
 });
