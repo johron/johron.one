@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
         sections[index].scrollIntoView({ behavior: 'smooth' });
     }
 
-    // Scroll to the first section on page load
     scrollToSection(0);
 
     document.addEventListener('wheel', function(event) {
@@ -67,22 +66,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     setInterval(function() {
-        let greet_element = document.querySelector(".greet");
-        if (greet_element) { // Check if the element exists
+        let greetElement = document.querySelector(".greet");
+        if (greetElement) {
             if (isFirstTick) currentTick += 1;
-            fadeOut(greet_element);
+            fadeOut(greetElement);
             setTimeout(function() {
-                greet_element.innerHTML = greetings[currentTick];
-                fadeIn(greet_element);
+                greetElement.innerHTML = greetings[currentTick] + ",";
+                fadeIn(greetElement);
                 currentTick = (currentTick + 1) % greetings.length;
                 isFirstTick = false;
             }, fadeDuration);
         }
-    }, 2500);
+    }, 3500);
 });
 
 document.addEventListener('mousemove', function(e) {
-    const body = document.getElementById('top');
+    const body = document.querySelector('.blue');
     const x = (e.clientX / window.innerWidth) * 100;
     body.style.background = `linear-gradient(${x}deg, #04091B, #1D2D63)`;
 });
