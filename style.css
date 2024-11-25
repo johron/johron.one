@@ -9,6 +9,7 @@ html {
     scroll-snap-type: y mandatory;
     overflow-y: hidden;
     text-align: center;
+    overflow: hidden;
 }
 
 body {
