@@ -1,8 +1,4 @@
-@font-face {
-    font-family: 'Nimbus Sans';
-    src: url("fonts/NimbusSanL-Reg.otf"),
-         url("fonts/NimbusSanL-Bol.otf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -15,7 +11,7 @@ body {
     background: linear-gradient(#0F0D0F, #151214);
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: 'Nimbus Sans', sans-serif;
+    font-family: 'Manrope', sans-serif;
     margin: 0;
     padding: 0;
 }
